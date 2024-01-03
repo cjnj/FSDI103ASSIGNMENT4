@@ -43,7 +43,7 @@
 function convertTemperatureRange() {
 
     let startValue = document.getElementById("temp").value;
-    let endValue =100;
+    let endValue =2;
     let scale =document.getElementById("scale").value;
     let result =document.getElementById("result");
 
@@ -52,16 +52,14 @@ function convertTemperatureRange() {
     if (scale == "C") {
         let fahrenheit = (i * 9/5) + 32;
         console.log(fahrenheit)
-        document.getElementById("result").innerHTML
+        document.getElementById("result").value=fahrenheit;
     }
 
     if (scale == "F") {
         let celsius = (i - 32) * (5 / 9);
         console.log(celsius)
-        document.getElementById("result").innerHTML
+        document.getElementById("result").value=celsius;
     }
     }
 
-    
-    
 }
